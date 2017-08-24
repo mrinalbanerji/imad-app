@@ -91,7 +91,8 @@ app.get('/counter', function (req, res) {
    counter = counter + 1;
    res.send(counter.toString());
 });
-var names = [];
+
+var names = [];//Below we have created a URL endpoint which gives and responds names
 app.get('/submit-name', function (req, res){//URL: /submit-name?name=xxx
     //get the name from the request object
     var name = req.query.name;
